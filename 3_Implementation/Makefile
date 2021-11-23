@@ -60,7 +60,7 @@ valgrind:
  
 # Build and run the unit tests	
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT).out
 	./$(TEST_OUTPUT)
 
 #doxygen documentation
