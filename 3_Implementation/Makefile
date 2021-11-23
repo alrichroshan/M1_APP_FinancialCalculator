@@ -1,5 +1,5 @@
 # Name of the project
-PROJ_NAME = M1_App_FinancialCalculator
+PROJ_NAME = Calculator
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
