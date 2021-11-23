@@ -61,7 +61,6 @@ valgrind:
 # Build and run the unit tests	
 test:$(BUILD_DIR)
 	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-		$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 #doxygen documentation
 doc:
