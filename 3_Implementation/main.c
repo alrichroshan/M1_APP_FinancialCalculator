@@ -8,8 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include <stdio.h>  
-#include <conio.h>  
+#include <stdio.h>   
 #include <math.h>  
 #include <stdlib.h>  
       
