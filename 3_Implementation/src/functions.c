@@ -19,21 +19,20 @@
  */
 int cagr()  
 {  
-    float futurevalue;
-    int beginningvalueofinvestment,endingvalueofinvestment,noofyearsofinvestment,cagr,value;
+    float beginningvalueofinvestment,endingvalueofinvestment,noofyearsofinvestment,cagr,value,futurevalue;
 
     printf (" Enter the Beginning Value Of Investment: ");  
-    scanf ("%d", &beginningvalueofinvestment);
+    scanf ("%f", &beginningvalueofinvestment);
 
     printf (" Enter the Ending Value Of Investment: ");  
-    scanf ("%d", &endingvalueofinvestment);
+    scanf ("%f", &endingvalueofinvestment);
 
     printf (" Enter the No.of Years Of Investment: ");  
-    scanf ("%d", &noofyearsofinvestment);  
+    scanf ("%f", &noofyearsofinvestment);  
 
     futurevalue = (endingvalueofinvestment/beginningvalueofinvestment)/noofyearsofinvestment;
 
-    printf (" CAGR is: %f", futurevalue);   
+    printf (" CAGR is: %0.2f", futurevalue);   
 } 
 
 /**
@@ -43,16 +42,16 @@ int cagr()
  */
 int discountcalculator()  
 {  
-    int totalprice,discount,futurevalue;
+    float totalprice,discount,futurevalue;
 
     printf (" Enter the Price: ");  
-    scanf ("  %d", &totalprice);  
+    scanf ("  %f", &totalprice);  
     printf (" Enter the Discount (in percentage): ");  
-    scanf ("  %d", &discount);  
+    scanf ("  %f", &discount);  
     
     futurevalue = (discount*totalprice)/100;
 
-    printf (" Total Discount is: %d", futurevalue);  
+    printf (" Total Discount is: %f", futurevalue);  
 }
 
 /**
@@ -62,14 +61,14 @@ int discountcalculator()
  */
 int ppf()  
 {  
-    int yearlyinvestment,timeperiod,totalvalue;
+    float yearlyinvestment,timeperiod,totalvalue;
 
     printf (" Enter the Yearly Investment: ");  
-    scanf ("  %d", &yearlyinvestment);  
+    scanf ("  %f", &yearlyinvestment);  
     printf (" Enter the Time Period (in years): ");  
-    scanf ("  %d", &timeperiod);  
+    scanf ("  %f", &timeperiod);  
     totalvalue = (yearlyinvestment*7.1*timeperiod)/100;    
-    printf (" The Total Value is: %d", totalvalue);  
+    printf (" The Total Value is: %0.2f", totalvalue);  
 }
 
 /**
@@ -95,7 +94,7 @@ int emi()
 
     totalemi = (totalamount * interestrate * pow(1 + interestrate, timeperiod)) / (pow(1 + interestrate, timeperiod) - 1);
 
-    printf("Monthly EMI is= %f\n", totalemi);
+    printf("Monthly EMI is= %0.2f\n", totalemi);
 
     return 0; 
 }
@@ -107,16 +106,16 @@ int emi()
  */
 int rd()  
 {  
-    int deposit, years, interest, totalvalue, months, totaldeposit, totalinterest;
+    float deposit, years, interest, totalvalue, months, totaldeposit, totalinterest;
 
     printf (" Enter the Monthly RD Deposit: ");  
-    scanf ("  %d", &deposit);
+    scanf ("  %f", &deposit);
 
     printf (" Enter Number of Years: ");  
-    scanf ("  %d", &years);
+    scanf ("  %f", &years);
 
     printf (" Enter RD Interest Rate: ");  
-    scanf ("  %d", &interest); 
+    scanf ("  %f", &interest); 
 
     months = years * 12;
 
@@ -126,7 +125,7 @@ int rd()
 
     totalvalue = totaldeposit + totalinterest;
 
-    printf (" \n The Square of is: %d", totalvalue);  
+    printf (" \n The Square of is: %0.2f", totalvalue);  
 } 
 
 /**
@@ -136,20 +135,20 @@ int rd()
  */
 int fd()  
 {    
-    int principle, interest, term, totalvalue;
+    float principle, interest, term, totalvalue;
 
     printf (" Enter the Principle Amount: ");  
-    scanf ("  %d", &principle);
+    scanf ("  %f", &principle);
 
     printf (" Enter the Interest Rate: ");  
-    scanf ("  %d", &interest);
+    scanf ("  %f", &interest);
 
     printf (" Enter the Term: ");  
-    scanf ("  %d", &term);  
+    scanf ("  %f", &term);  
   
     totalvalue = principle * (1 + (interest * term));
 
-    printf (" \n The Total Value is: %d", totalvalue);  
+    printf (" \n The Total Value is: %0.2f", totalvalue);  
 }
 
 /**
@@ -185,20 +184,19 @@ int sip()
  */
 int lumpsum()  
 {   
-    float futurevalue;
-    int presentvalue, rateofinterest, numberofyears,lumpsum;
+    float presentvalue, rateofinterest, numberofyears,lumpsum,futurevalue;
 
 
     printf (" Enter a number to get the Present Value: ");  
-    scanf ("  %d", &presentvalue);
+    scanf ("  %f", &presentvalue);
 
     printf (" Enter a number to get the Rate of Interest (Annual): ");  
-    scanf ("  %d", &rateofinterest);
+    scanf ("  %f", &rateofinterest);
 
     printf (" Enter a number to get the Number of Years: ");  
-    scanf ("  %d", &numberofyears);  
+    scanf ("  %f", &numberofyears);  
 
     futurevalue = presentvalue * pow(1 + rateofinterest/12, numberofyears);
 
-    printf (" \n The Future Value is: %f", futurevalue); 
+    printf (" \n The Future Value is: %0.2f", futurevalue); 
 }
