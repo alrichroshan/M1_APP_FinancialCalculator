@@ -79,7 +79,7 @@ int ppf()
  */
 int emi()  
 {
-    float totalamount, interestrate, timeperiod, emi;
+    float totalamount, interestrate, timeperiod, totalemi;
 
     printf("Enter Total Amount: ");
     scanf("%f", &totalamount);
@@ -93,9 +93,9 @@ int emi()
     interestrate = interestrate / (12 * 100);
     timeperiod = timeperiod * 12;
 
-    emi = (totalamount * interestrate * pow(1 + interestrate, timeperiod)) / (pow(1 + interestrate, timeperiod) - 1);
+    totalemi = (totalamount * interestrate * pow(1 + interestrate, timeperiod)) / (pow(1 + interestrate, timeperiod) - 1);
 
-    printf("Monthly EMI is= %f\n", emi);
+    printf("Monthly EMI is= %f\n", totalemi);
 
     return 0; 
 }
