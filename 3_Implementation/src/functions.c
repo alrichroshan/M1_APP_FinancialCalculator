@@ -184,8 +184,9 @@ int sip()
  * @return int 
  */
 int lumpsum()  
-{    
-    int presentvalue, rateofinterest, numberofyears,lumpsum,futurevalue;
+{   
+    float futurevalue;
+    int presentvalue, rateofinterest, numberofyears,lumpsum;
 
 
     printf (" Enter a number to get the Present Value: ");  
@@ -199,5 +200,5 @@ int lumpsum()
 
     futurevalue = presentvalue * pow(1 + rateofinterest/12, numberofyears);
 
-    printf (" \n The Future Value is: %d", futurevalue); 
+    printf (" \n The Future Value is: %f", futurevalue); 
 }
