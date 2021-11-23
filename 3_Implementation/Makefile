@@ -60,7 +60,7 @@ valgrind:
  
 # Build and run the unit tests	
 test:$(BUILD)
-	gcc -Iinc $(INC) $(UNI) $(SRC) $(TEST_SRC).c -o test\test_functions.exe
+	gcc $(INC) $(UNI) $(SRC) $(TEST_SRC) -o test\test_functions.exe
 	./test\test_functions.exe
 
 #doxygen documentation
