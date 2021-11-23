@@ -1,20 +1,25 @@
 # Test Plan
 
 # High Level Test Plan
-| ID   |      Description     |  Expected o/p |
-|----------|:-------------:|------:|
-| HLTP_1 |  CAGR Calculation | Implemented  |
-| HLTP_2 |  Discount Calculation  | Implemented  |
-| HLTP_3 |  PPF Calculation  | Implemented  |
-| HLTP_4 |  EMI Calculation | Implemented  |
-| HLTP_5 |  RD Calculation  | Implemented  |
-| HLTP_6 |  FD Calculation  | Implemented  |
-| HLTP_7 |  LumpSum Calculation | Implemented  |
-| HLTP_8 |  SIP Calculation  | Implemented  |
+| ID | Description | Expected I/P | Expected O/P | Actual O/P | Type Of Test |
+|---|---|---|---|---|---|
+| HLTP_1 | CAGR Operation | (Choice) | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_2 | Discount Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_3 | PPF Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_4 | EMI Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_5 | RD Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_6 | FD Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_7 | SIP Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
+| HLTP_8 | LumpSum Operation | Choice | SUCCESS | SUCCESS | Requirement Based |
 
 # Low Level Test Plan
-| ID   |      Description     |  Expected o/p |
-|----------|:-------------:|------:|
-| LLTP_1 |  CAGR Calculation | 1  |
-| LLTP_2 |  Discount Calculation  | 1  |
-| LLTP_3 |  PPF Calculation  | 1  |
+| ID | Description | Expected I/P | Expected O/P | Actual O/P | Type Of Test |
+|---|---|---|---|---|---|
+| HLTP_1 | CAGR Calculation | (1000, 10000, 24) | 10.07 | 10.07 | Requirement Based |
+| HLTP_2 | Discount Calculation | (1000, 7) | 70 | 70 | Requirement Based |
+| HLTP_3 | PPF Calculation | (500, 15) | 13561 | 13561 | Requirement Based |
+| HLTP_4 | EMI Calculation | (100000, 7, 1) | 8653 | 8653 | Requirement Based |
+| HLTP_5 | RD Calculation | (500, 1, 7) | 6234 | 6234 | Requirement Based |
+| HLTP_6 | FD Calculation | (5000, 7, 1) | 5359 | 5359 | Requirement Based |
+| HLTP_7 | SIP Calculation | (500, 7, 1) | 6232 | 6232 | Requirement Based |
+| HLTP_8 | LumpSum Calculation | (500, 7, 1) | 535 | 535 | Requirement Based |
