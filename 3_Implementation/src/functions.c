@@ -19,7 +19,8 @@
  */
 int cagr()  
 {  
-    int beginningvalueofinvestment,endingvalueofinvestment,noofyearsofinvestment,cagr,value,futurevalue;
+    float futurevalue;
+    int beginningvalueofinvestment,endingvalueofinvestment,noofyearsofinvestment,cagr,value;
 
     printf (" Enter the Beginning Value Of Investment: ");  
     scanf ("%d", &beginningvalueofinvestment);
@@ -28,13 +29,11 @@ int cagr()
     scanf ("%d", &endingvalueofinvestment);
 
     printf (" Enter the No.of Years Of Investment: ");  
-    scanf ("%d", &noofyearsofinvestment);
-
-    //value = (1/noofyearsofinvestment);  
+    scanf ("%d", &noofyearsofinvestment);  
 
     futurevalue = (endingvalueofinvestment/beginningvalueofinvestment)/noofyearsofinvestment;
 
-    printf (" CAGR is: %d", futurevalue);   
+    printf (" CAGR is: %f", futurevalue);   
 } 
 
 /**
