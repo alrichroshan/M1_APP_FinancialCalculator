@@ -68,7 +68,7 @@ void test_cagr(void) {
 }
 
 void test_discountcalculator(void) {
-  TEST_ASSERT_EQUAL(5, discountcalculator(100, 2));
+  TEST_ASSERT_EQUAL(4, discountcalculator(100, 2));
 }
 
 void test_ppf(void) {
@@ -80,17 +80,17 @@ void test_emi(void) {
 }
 
 void test_rd(void) {
-  TEST_ASSERT_EQUAL(5, rd(100, 2, 2));
+  TEST_ASSERT_EQUAL(7, rd(100, 2, 2));
 }
 
 void test_fd(void) {
-  TEST_ASSERT_EQUAL(37, fd(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, fd(100, 2, 2));
 }
 
 void test_sip(void) {
-  TEST_ASSERT_EQUAL(4, sip(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, sip(100, 2, 2));
 }
 
 void test_lumpsum(void) {
-  TEST_ASSERT_EQUAL(37, lumpsum(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, lumpsum(100, 2, 2));
 }
