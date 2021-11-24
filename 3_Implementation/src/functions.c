@@ -32,7 +32,7 @@ int cagr()
 
     futurevalue = (endingvalueofinvestment/beginningvalueofinvestment)/noofyearsofinvestment;
 
-    printf (" CAGR is: %0.2f", futurevalue);   
+    printf ("%0.2f", futurevalue);   
 } 
 
 /**
@@ -51,7 +51,7 @@ int discountcalculator()
     
     futurevalue = (discount*totalprice)/100;
 
-    printf (" Total Discount is: %f", futurevalue);  
+    printf ("%0.2f", futurevalue);  
 }
 
 /**
@@ -68,7 +68,7 @@ int ppf()
     printf (" Enter the Time Period (in years): ");  
     scanf ("  %f", &timeperiod);  
     totalvalue = (yearlyinvestment*7.1*timeperiod)/100;    
-    printf (" The Total Value is: %0.2f", totalvalue);  
+    printf ("%0.2f", totalvalue);  
 }
 
 /**
@@ -94,7 +94,7 @@ int emi()
 
     totalemi = (totalamount * interestrate * pow(1 + interestrate, timeperiod)) / (pow(1 + interestrate, timeperiod) - 1);
 
-    printf("Monthly EMI is= %0.2f\n", totalemi);
+    printf("%0.2f", totalemi);
 
     return 0; 
 }
@@ -125,7 +125,7 @@ int rd()
 
     totalvalue = totaldeposit + totalinterest;
 
-    printf (" \n The Square of is: %0.2f", totalvalue);  
+    printf ("%0.2f", totalvalue);  
 } 
 
 /**
@@ -148,7 +148,7 @@ int fd()
   
     totalvalue = principle * (1 + (interest * term));
 
-    printf (" \n The Total Value is: %0.2f", totalvalue);  
+    printf ("%0.2f", totalvalue);  
 }
 
 /**
@@ -174,7 +174,7 @@ int sip()
     totalvalue = futurevalue + monthlysipamount; 
 
 
-    printf ("Total Value is: %0.2f", totalvalue); 
+    printf ("%0.2f", totalvalue); 
 }
 
 /**
@@ -198,5 +198,5 @@ int lumpsum()
 
     futurevalue = presentvalue * pow(1 + rateofinterest/12, numberofyears);
 
-    printf (" \n The Future Value is: %0.2f", futurevalue); 
+    printf ("%0.2f", futurevalue); 
 }

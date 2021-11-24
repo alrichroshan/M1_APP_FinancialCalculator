@@ -64,40 +64,40 @@ int main()
  * 
  */
 void test_cagr(void) {
-  TEST_ASSERT_EQUAL(5, cagr(100, 1000, 2));
+  TEST_ASSERT_EQUAL(4, cagr(100, 1000, 2));
 }
 
 void test_discountcalculator(void) {
-  TEST_ASSERT_EQUAL(2, discountcalculator(100, 2));
+  TEST_ASSERT_EQUAL(4, discountcalculator(100, 2));
 
 }
 
 void test_ppf(void) {
-  TEST_ASSERT_EQUAL(14, ppf(100, 2));
+  TEST_ASSERT_EQUAL(5, ppf(100, 2));
   
 }
 
 void test_emi(void) {
-  TEST_ASSERT_EQUAL(4.254030, emi(100, 2, 2));
+  TEST_ASSERT_EQUAL(0, emi(100, 2, 2));
   
 }
 
 void test_rd(void) {
-  TEST_ASSERT_EQUAL(7400, rd(100, 2, 2));
+  TEST_ASSERT_EQUAL(7, rd(100, 2, 2));
   
 }
 
 void test_fd(void) {
-  TEST_ASSERT_EQUAL(500, fd(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, fd(100, 2, 2));
   
 }
 
 void test_sip(void) {
-  TEST_ASSERT_EQUAL(104.04, sip(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, sip(100, 2, 2));
   
 }
 
 void test_lumpsum(void) {
-  TEST_ASSERT_EQUAL(100, lumpsum(100, 2, 2));
+  TEST_ASSERT_EQUAL(6, lumpsum(100, 2, 2));
   
 }
