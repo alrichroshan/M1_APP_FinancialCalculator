@@ -69,7 +69,6 @@ void test_cagr(void) {
 
 void test_discountcalculator(void) {
   TEST_ASSERT_EQUAL(5, discountcalculator(100, 2));
-
 }
 
 void test_ppf(void) {
