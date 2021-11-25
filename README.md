@@ -8,17 +8,17 @@ In this project, a version of the financial calculator program in C is developed
 # Folder Structure
 | Folder   |      Description     |  
 |----------|:-------------:|
-| 1_Requirements |  Documents detailing requirements and research |
-| 2_Design |    Documents specifying design  | 
-| 3_Implementation |   All codes and Documentation  |
-| 4_TestPlan |  Documents with test plans |
-| 5_Report |    Documentation of whole project  | 
-| 6_Images |    All the images of this project  |
+| `1_Requirements` |  Documents detailing requirements and research |
+| `2_Design` |    Documents specifying design  | 
+| `3_Implementation` |   All codes and Documentation  |
+| `4_TestPlan` |  Documents with test plans |
+| `5_Report` |    Documentation of whole project  | 
+| `6_Images` |    All the images of this project  |
 
 # Contributors List and Summary
 | PS No. | Name | Features | Issuess Raised | Issuess Resolved | No Test Cases | Test Case Pass |
 |---|---|---|---|---|---|---|
-| 40020515 | Alrich Roshan S J | F1, F2, F3, F4, F5, F6, F7, F8 | 1 | 1 | 8 | 8 |
+| `40020515` | Alrich Roshan S J | F1, F2, F3, F4, F5, F6, F7, F8 | 1 | 1 | 8 | 8 |
 
 | No | Feature |
 |---|---|
